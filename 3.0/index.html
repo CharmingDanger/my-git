@@ -118,16 +118,19 @@
 	/*获取所有游戏数据*/
 
 	$(function(){
+		alert(0);
 		$.ajax({
 			type:"GET",
 			url:"game_info.json",
 			dataType:"json",
 			success:function (res){
+				alert(1);
 				for(var i=0;i<res.length;i++){
 					$(".all_games_list").append("<ul><li class='all_games_item'><div class='games_item_xq'><div class='logo'><img src='images/"+res[i].logo_url+"'></div><div class='game_info'><p class='game_name'>"+res[i].game_name+"</p><p class='game_dx'>"+res[i].game_dx+"</p><p class='game_pj'><img src='images/game_pj_23.png'></p></div> <div class='game_download'><a class='download'><img src='images/download_09.png'></a><p>"+res[i].game_download_time+"次下载</p></div></div><p class='game_wf'>"+res[i].game_wf+"</p></li></ul>");
 				}
 			},
 			error:function (xhr){
+				alert(2);
 				alert(xhr.status);
 			}
 		});
