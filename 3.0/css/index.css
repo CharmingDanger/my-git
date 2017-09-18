@@ -1,0 +1,113 @@
+*{margin:0;padding:0;}
+html,body{height:100%;width:100%;}
+body{visibility: hidden;}
+a{text-decoration: none;}
+li{list-style:none;}
+.outer{
+	width:100%; 
+	min-height:100%;
+	margin:0 auto;
+	font-size:.2rem;
+	font-family:"微软雅黑";
+}
+.inner{
+	width:100%;
+	position: relative;
+}
+
+/*修改添加的css代码*/
+.hd_inner{
+	width:100%;
+	position: relative;
+}
+.hd_logo{width:100%;}
+.hd_logo img{display:block;width:100%;}
+.head_back{
+	width:100%;
+}
+.head_back img{
+	display: block;
+	width:100%;
+}
+
+.all_games{width:100%;}
+.game_hd{width:100%;}
+.game_hd img{display:block;width:100%;}
+
+.all_games_list,.all_games_list ul{width:100%}
+.all_games_item{margin:.2rem;background: #f6f6f6;padding:.2rem;box-sizing:border-box;overflow: hidden;}
+
+.games_item_xq{overflow: hidden;}
+.games_item_xq div{float: left;}
+
+.logo img{display: block;width:1.12rem;}
+
+.game_info{margin-left:.24rem;line-height: .35rem;}
+.game_name{font-size: .32rem;color:#313131;padding-top:.1rem;}
+.game_dx{color:#aaaaaa;}
+.game_pj img{display: block;width:1.58rem;}
+
+.all_games_item .game_download{float: right;}
+.download{display: block;}
+.download img{display: block;width:1.62rem;}
+.game_download p{color:#aaaaaa;text-align: center;line-height: .45rem;}
+
+.game_wf{font-size: .24rem;color:#717171;padding-top:.15rem;}
+
+.footer{
+	width:100%;
+	margin-top:.4rem;
+}
+.footer_fiex{
+	width:100%;
+	padding: .2rem 0;
+	background: #000;
+}
+.footer p{
+	width:100%;
+	color:#7d7d7d;
+	line-height: .3rem;
+	text-align: center;
+}
+
+.down_btn::before{
+	content: "";
+	display: block;
+    background: linear-gradient(to left,rgba(255,255,255,0), rgba(255,255,255,.6),rgba(255,255,255,0));
+    -webkit-transform: skew(-40deg, 0);
+    transform: skew(-40deg, 0);
+    width:.6rem;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -1.3rem;
+    z-index: 9999;
+    perspective-origin:left;
+    -webkit-animation:to_left 4s linear infinite;
+    animation:to_left 4s linear infinite;
+}
+@keyframes to_left{
+	0%{left:-1.3rem;opacity: 0;}
+	75%{left:-1.3rem;opacity: 0;}
+	100%{left:100%;opacity: 1;}
+}
+
+@-moz-keyframes to_left{
+	0%{left:-1.3rem;opacity: 0;}
+	75%{left:-1.3rem;opacity: 0;}
+	100%{left:100%;opacity: 1;}
+}
+
+@-webkit-keyframes to_left{
+	0%{left:-1.3rem;opacity: 0;}
+	75%{left:-1.3rem;opacity: 0;}
+	100%{left:100%;opacity: 1;}
+}
+
+@-o-keyframes to_left{
+	0%{left:-1.3rem;opacity: 0;}
+	75%{left:-1.3rem;opacity: 0;}
+	100%{left:100%;opacity: 1;}
+}
+
+

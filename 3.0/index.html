@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>来丸游戏官网-来丸江西麻将下载,南昌麻将,随时随地组局的线上麻将馆</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<meta name="keywords" content="来丸游戏,来丸江西麻将下载,来丸南昌麻将,随精">
+	<meta name="description" content="来丸游戏,来丸江西麻将,南昌麻将,同一首歌,上下翻精,随精,埋雷,最牛防作弊,100%无挂玩的放心激爽！">
+	<link rel="stylesheet" href="css/index.css">
+	<script type="text/javascript" src="https://static.zkyouxi.com/setRem.js "></script>
+	<script src="js/jquery.min.js"></script>
+</head>
+<body>
+	<div class="outer">
+		<div class="inner">
+			<div class="hd_inner">
+				<div class="hd_logo">
+					<img src="images/hd_logo_01.png">
+				</div>
+				<div class="head_back">
+					<img src="images/hd_bc_02.jpg">
+				</div>
+			</div>
+			<div class="all_games">
+				<div class="game_hd">
+					<img src="images/all_games_03.png">
+				</div>
+				<div class="all_games_list">
+					<!-- <ul> -->
+						<!-- <li class="all_games_item">
+							<div class="games_item_xq">
+								<div class="logo">
+									<img src="images/logo_06.jpg">
+								</div>
+								<div class="game_info">
+									<p class="game_name">来丸江西麻将</p>
+									<p class="game_dx">19.9MB</p>
+									<p class="game_pj">
+										<img src="images/game_pj_23.png">
+									</p>
+								</div>
+								<div class="game_download">
+									<a class="download">
+										<img src="images/download_09.png">
+									</a>
+									<p>100万次下载</p>
+								</div>
+							</div>
+							<p class="game_wf">新增”随精“、”晒月亮“玩法，安全无外挂，南昌人都爱玩。</p>
+						</li> -->
+
+						<!-- <li class="all_games_item">
+							<div class="games_item_xq">
+								<div class="logo">
+									<img src="images/logo_06.jpg">
+								</div>
+								<div class="game_info">
+									<p class="game_name">来丸江西麻将</p>
+									<p class="game_dx">19.9MB</p>
+									<p class="game_pj">
+										<img src="images/game_pj_23.png">
+									</p>
+								</div>
+								<div class="game_download">
+									<a class="download">
+										<img src="images/download_09.png">
+									</a>
+									<p>100万次下载</p>
+								</div>
+							</div>
+							<p class="game_wf">新增”随精“、”晒月亮“玩法，安全无外挂，南昌人都爱玩。</p>
+						</li> -->
+
+						<!-- <li class="all_games_item">
+							<div class="games_item_xq">
+								<div class="logo">
+									<img src="images/logo_06.jpg">
+								</div>
+								<div class="game_info">
+									<p class="game_name">来丸江西麻将</p>
+									<p class="game_dx">19.9MB</p>
+									<p class="game_pj">
+										<img src="images/game_pj_23.png">
+									</p>
+								</div>
+								<div class="game_download">
+									<a class="download">
+										<img src="images/download_09.png">
+									</a>
+									<p>100万次下载</p>
+								</div>
+							</div>
+							<p class="game_wf">新增”随精“、”晒月亮“玩法，安全无外挂，南昌人都爱玩。</p>
+						</li> -->
+					<!-- </ul> -->
+				</div>
+			</div>
+			<div class="footer">
+				<div class="footer_fiex">
+					<p>广州掌昆网络科技有限公司</p>
+					<p>广州市天河区天河北路906号2204房&nbsp;|&nbsp;座机：020-22093063</p>
+					<p>粤ICP备17054793号-1&nbsp;软著登字第1770266号</p>
+					<p>网络文化经营许可证：粤网文（2017）5345-1226号</p>
+					<p>健康游戏公告：抵制不良游戏&nbsp;拒绝盗版游戏&nbsp;文明游戏&nbsp;禁止赌博</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	/*页面加载完再显示*/
+	window.onload=docShow;
+	function docShow(){
+		var body=document.getElementsByTagName("body")[0];
+		body.style.visibility="visible";
+	}
+
+	/*获取所有游戏数据*/
+
+	$(function(){
+		$.ajax({
+			type:"GET",
+			url:"game_info.json",
+			dataType:"json",
+			success:function (res){
+				for(var i=0;i<res.length;i++){
+					$(".all_games_list").append("<ul><li class='all_games_item'><div class='games_item_xq'><div class='logo'><img src='images/"+res[i].logo_url+"'></div><div class='game_info'><p class='game_name'>"+res[i].game_name+"</p><p class='game_dx'>"+res[i].game_dx+"</p><p class='game_pj'><img src='images/game_pj_23.png'></p></div> <div class='game_download'><a class='download'><img src='images/download_09.png'></a><p>"+res[i].game_download_time+"次下载</p></div></div><p class='game_wf'>"+res[i].game_wf+"</p></li></ul>");
+				}
+			},
+			error:function (xhr){
+				alert(xhr.status);
+			}
+		});
+	});
+</script>
+</html>
