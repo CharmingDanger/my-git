@@ -1,0 +1,89 @@
+*{margin:0;padding:0;}
+body,html{height:100%; width:100%;overflow:auto;}
+li{list-style: none;}
+a{text-decoration: none;}
+.outer{
+	width:100%;
+	min-height:100%;
+	margin:0 auto;
+	font-size:.2rem;
+	font-family:"微软雅黑";
+}
+.inner{
+	width:100%;
+}
+.back{
+	width:100%;
+	font-size: .3rem;
+	padding:.2rem .3rem;
+	background:#28c1fd;
+	box-sizing:border-box;
+}
+.back a{
+	color:#fff;
+
+}
+.cont{
+	padding:0 .2rem;
+}
+
+.tpTime_paim{
+	width:100%;
+	margin-top:.3rem;
+}
+.tp_time,.tp_guize{
+	padding:.1rem;
+	border-bottom:1px solid #c7c7c7;
+}
+.tp_time img,.tp_guize img{
+	height:.25rem;
+	width:auto;
+	display: inline-block;
+	vertical-align:middle;
+}
+.tp_time span,.tp_guize span{
+	font-size: .25rem;
+	vertical-align:middle;
+}
+.paim{
+	width:100%;
+}
+.paim h2{
+	padding:.1rem;
+	font-size: .3rem;
+	border-bottom:1px solid #c7c7c7;
+}
+.pai_all li{
+	padding:.2rem .1rem;
+	font-size: .22rem;
+	border-bottom:1px solid #c7c7c7;
+}
+
+.mingc{
+	color:#fff;
+	width:1.2rem;
+	height:.4rem;
+	float: left;
+	text-align: center;
+	border-radius:.1rem;
+	line-height: .4rem;
+}
+.name{
+	overflow: hidden;
+	height:.4rem;
+	line-height: .4rem;
+}
+.name p{
+	width: 100%;
+	text-align: center;
+}
+.pians{
+	float: right;
+	height:.4rem;
+	line-height: .4rem;
+	width: 1rem;
+    text-align: right;
+}
+.zongp{
+	color:#fd3131;
+}

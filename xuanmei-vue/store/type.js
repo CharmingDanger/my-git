@@ -1,0 +1,3 @@
+export const NUMBER_HAVE_SUCC='NUMBER_HAVE_SUCC';
+export const NAME_HAVE_SUCC='NAME_HAVE_SUCC';
+export const NUMBER_NO='NUMBER_NO';
